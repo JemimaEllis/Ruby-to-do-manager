@@ -1,18 +1,9 @@
 Rails.application.routes.draw do
+
   devise_for :users
-  get 'task/index'
+  resources :tasks
 
-  get 'task/show'
-
-  get 'task/new'
-
-  get 'task/create'
-
-  get 'task/edit'
-
-  get 'task/update'
-
-  get 'task/destroy'
-
+  root "tasks#index"
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

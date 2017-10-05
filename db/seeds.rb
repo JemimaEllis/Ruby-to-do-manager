@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-u1 = user = User.create! :email => 'peekaboo@hotmail.co.uk', :password => 'Hello1'
+u1 = user = User.create! :email => 'fluffyducky@hotmail.co.uk', :password => 'Hello1'
 
-Task.create(task: "Brush teeth", user_id: u1.id)
-Task.create(task: "Have shower", user_id: u1.id)
+Task.create(list: "Brush teeth", user_id: u1.id)
+Task.create(list: "Have shower", user_id: u1.id)
 
 puts "Finished seed"
