@@ -4,6 +4,7 @@
 
 <%= link_to "Show Page", task if action_name == "index" %>
 <%= link_to "Edit Page", edit_task_path(task) %>
+<%= link_to "Home Page", tasks_path if action_name == "show" %>
 
 
 </div>
