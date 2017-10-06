@@ -36,7 +36,7 @@ class TasksController < ApplicationController
   end
 
   protected
-  def test_params
+  def task_params
     params.require(:task).permit(:list, :user_id)
   end
 end
